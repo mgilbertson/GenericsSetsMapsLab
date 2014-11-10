@@ -20,6 +20,7 @@ public class Lab5 {
         Employee e4 = new Employee("Jones", "Jimothy", "444-44-4444");
         Map<Integer, Employee> map = new HashMap<Integer, Employee>();
         //I decided to dynamically create an employee ID for each employee in the Employee constructor and then use it as the map keys
+        //This ensures that a different value is used for each key
         map.put(e1.getEmpId(), e1);
         map.put(e2.getEmpId(), e2);
         map.put(e3.getEmpId(), e3);

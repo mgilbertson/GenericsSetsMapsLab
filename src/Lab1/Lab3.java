@@ -13,14 +13,18 @@ import java.util.*;
  */
 public class Lab3 {
     public static void main(String[] args) {
+        
         List<Employee> employees = new ArrayList<>();
         employees.add(new Employee("Smith", "John", "111-11-1111"));
         employees.add(new Employee("Johnson", "Jack", "222-22-2222"));
         employees.add(new Employee("Jones", "Jone", "333-33-3333"));
         employees.add(new Employee("Jones", "Jone", "333-33-3333"));
-        System.out.println("The size of the employees list is: " + employees.size());
+        
+        System.out.println("The size of the employees list is: " + employees.size() + "\n");
+        
         Employee employee2 = employees.get(1);
-        System.out.println("Employee2: " + employee2);
+        System.out.println("Employee2: " + employee2 + "\n");
+        
         for (Employee employee : employees) {
             System.out.println(employee);
         }
